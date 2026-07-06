@@ -36,6 +36,14 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: |
+          hugo mod npm pack
+          npm install
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
