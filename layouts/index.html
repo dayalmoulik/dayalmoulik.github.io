@@ -1,0 +1,142 @@
+{{ define "main" }}
+  <!-- Hero Section -->
+  <section id="about" class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-greeting">Hi, my name is</span>
+        <h1 class="hero-title">{{ .Title }}</h1>
+        <h2 class="hero-subtitle">{{ .Params.subtitle }}</h2>
+        <p class="hero-bio">{{ .Params.bio }}</p>
+        
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="data-sphere">
+          <div class="sphere-core"></div>
+          <div class="sphere-orbit-1"></div>
+          <div class="sphere-orbit-2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="section-number">01.</span> Experience</h2>
+      <div class="timeline">
+        {{ range .Params.experience }}
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <h3 class="timeline-role">{{ .role }} <span class="text-accent">@ {{ .company }}</span></h3>
+            <span class="timeline-date">{{ .dates }}</span>
+          </div>
+          <p class="timeline-body">{{ .summary }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-slate">
+    <div class="container">
+      <h2 class="section-title"><span class="section-number">02.</span> Featured Projects</h2>
+      <div class="projects-grid">
+        {{ range .Params.projects }}
+        <div class="project-card">
+          <div class="project-card-header">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="project-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            {{ if .link }}
+            <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Project Link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            {{ end }}
+          </div>
+          <h3 class="project-title">{{ .name }}</h3>
+          <span class="project-subtitle">{{ .subtitle }}</span>
+          <p class="project-description">{{ .description }}</p>
+          <div class="project-tools">
+            {{ range .tools }}
+            <span class="tool-tag">{{ . }}</span>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="section-number">03.</span> Skills Purview</h2>
+      <div class="skills-grid">
+        {{ range .Params.skills }}
+        <div class="skills-category-card">
+          <h3 class="skills-category-title">{{ .category }}</h3>
+          <div class="skills-list">
+            {{ range .items }}
+            <span class="skill-badge">{{ . }}</span>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section bg-slate">
+    <div class="container">
+      <h2 class="section-title"><span class="section-number">04.</span> Education</h2>
+      <div class="timeline">
+        {{ range .Params.education }}
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <h3 class="timeline-role">{{ .degree }}</h3>
+            <span class="timeline-date">{{ .dates }}</span>
+          </div>
+          <h4 class="timeline-org">{{ .institution }}</h4>
+          {{ with .details }}
+          <p class="timeline-body">{{ . }}</p>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container contact-container">
+      <div class="contact-box">
+        <h2 class="section-title text-center"><span class="section-number">05.</span> Get In Touch</h2>
+        <p class="contact-text">
+          Whether you want to discuss AI projects, seek consultation on curriculum design, or discuss potential roles in data science and machine learning engineering, my inbox is always open.
+        </p>
+        
+        <div class="contact-methods">
+          {{ with .Params.socials.email }}
+          <a href="mailto:{{ . }}" class="contact-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            {{ . }}
+          </a>
+          {{ end }}
+          
+          {{ with .Params.socials.linkedin }}
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="contact-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            Connect on LinkedIn
+          </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

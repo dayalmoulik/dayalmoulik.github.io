@@ -1,0 +1,11 @@
+baseURL = 'https://dayalmoulik.github.io/'
+locale = 'en-us'
+title = 'Moulik Dayal | Data Scientist & AI Curriculum Engineer'
+
+[params]
+  description = 'Personal website and portfolio of Moulik Dayal, Data Scientist and AI Curriculum Engineer specializing in Machine Learning, Deep Learning, and Multi-Agent RAG systems.'
+  author = 'Moulik Dayal'
+  email = 'dayalmoulik5@gmail.com'
+  phone = '+91-9560813210'
+  linkedin = 'https://linkedin.com/in/moulik-dayal-a95751b7'
+  github = 'https://github.com/dayalmoulik'
