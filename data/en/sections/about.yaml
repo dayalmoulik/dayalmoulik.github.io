@@ -25,6 +25,18 @@ socialLinks:
     url: "https://linkedin.com/in/moulik-dayal-a95751b7"
 
 badges:
+  - type: certification
+    name: "Natural Language Processing Specialization"
+    url: "https://www.coursera.org/specializations/natural-language-processing"
+    badge: "https://images.credly.com/size/680x680/images/2efd4d62-11a5-4dc2-82dc-df4bbf2e9d2a/nlp-specialization.png"
+  - type: certification
+    name: "Deep Learning Specialization"
+    url: "https://www.coursera.org/specializations/deep-learning"
+    badge: "https://images.credly.com/size/680x680/images/283fa889-84bf-4861-a4a0-9e9d68318c5c/deep-learning-specialization.png"
+  - type: certification
+    name: "Data Science, Machine Learning & Deep Learning"
+    url: ""
+    badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
   - type: soft-skill-indicator
     name: Machine Learning
     percentage: 95

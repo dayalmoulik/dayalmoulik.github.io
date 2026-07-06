@@ -37,7 +37,7 @@ params:
     portfolio:
       enable: true
     blog:
-      enable: false
+      enable: true
     notes:
       enable: false
     comment:
