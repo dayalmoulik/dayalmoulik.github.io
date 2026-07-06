@@ -1,0 +1,44 @@
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  filter: true
+
+buttons:
+  - name: All
+    filter: "all"
+  - name: Machine Learning
+    filter: "ml"
+  - name: Engineering & Tools
+    filter: "tools"
+  - name: Professional
+    filter: "professional"
+
+skills:
+  - name: "Python"
+    summary: "Expert in Python for data manipulation, analysis, and ML model development using Pandas, NumPy, and Scikit-learn."
+    categories: ["ml", "tools"]
+    url: "https://www.python.org"
+
+  - name: "TensorFlow"
+    summary: "Experienced in building and deploying deep learning models for NLP, computer vision, and text classification tasks."
+    categories: ["ml"]
+    url: "https://www.tensorflow.org"
+
+  - name: "NLP & LLMs"
+    summary: "Skilled in advanced NLP techniques, including transformers (Hugging Face), text modeling, and multi-agent RAG pipelines."
+    categories: ["ml"]
+
+  - name: "SQL"
+    summary: "Proficient in database querying, relational database design, and data retrieval for modeling and reporting."
+    categories: ["tools"]
+
+  - name: "MLOps & Git"
+    summary: "Experienced with git-based development workflows and deploying machine learning models into production."
+    categories: ["tools"]
+
+  - name: "Curriculum Design & Training"
+    summary: "Demonstrated experience designing technical AI curricula and instructing college students, government, and CISF personnel."
+    categories: ["professional"]

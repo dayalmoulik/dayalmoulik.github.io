@@ -1,0 +1,43 @@
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+designation: "Data Scientist & AI Curriculum Engineer"
+company:
+  name: "CDAC Pune"
+  url: "https://www.cdac.in"
+
+summary: "I bridge the gap between complex artificial intelligence research and real-world application. As a Project Engineer and Data Scientist, I design advanced AI curricula, lead hands-on technical webinars for government and defense organizations, and engineer intelligent systems—such as multi-agent RAG pipelines—to solve complex analytical challenges."
+
+socialLinks:
+  - name: Email
+    icon: "fas fa-envelope"
+    url: "mailto:dayalmoulik5@gmail.com"
+  - name: Github
+    icon: "fab fa-github"
+    url: "https://github.com/dayalmoulik"
+  - name: LinkedIn
+    icon: "fab fa-linkedin"
+    url: "https://linkedin.com/in/moulik-dayal-a95751b7"
+
+badges:
+  - type: soft-skill-indicator
+    name: Machine Learning
+    percentage: 95
+    color: blue
+  - type: soft-skill-indicator
+    name: Deep Learning
+    percentage: 90
+    color: green
+  - type: soft-skill-indicator
+    name: NLP
+    percentage: 95
+    color: orange
+  - type: soft-skill-indicator
+    name: Curriculum Design
+    percentage: 90
+    color: yellow

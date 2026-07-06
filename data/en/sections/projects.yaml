@@ -1,0 +1,28 @@
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 3
+  showOnNavbar: true
+
+buttons:
+  - name: All
+    filter: "all"
+  - name: Dissertation
+    filter: "dissertation"
+  - name: Academic
+    filter: "academic"
+
+projects:
+  - name: "TRISEVA"
+    role: "Lead Developer"
+    timeline: "M.Tech Dissertation"
+    repo: "https://github.com/dayalmoulik"
+    summary: "Developed a multi-agent Retrieval-Augmented Generation (RAG) system engineered for explainable cross-domain document question answering across healthcare, legal/government, and agriculture domains."
+    tags: ["dissertation", "RAG", "Multi-Agent", "LLMs", "NLP"]
+
+  - name: "Mental Graph of User from Social Media Posts"
+    role: "Developer"
+    timeline: "Academic Project"
+    summary: "Applied NLP techniques to analyze social media data for classifying anti-national posts, using Python, TensorFlow, and data visualization tools to model user sentiment."
+    tags: ["academic", "NLP", "TensorFlow", "Python"]

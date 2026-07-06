@@ -1,0 +1,8 @@
+copyright: "© 2026 Moulik Dayal. All rights reserved."
+disclaimer: "Personal portfolio website of Moulik Dayal, built with Hugo and the Toha theme."
+description: "Portfolio and personal website of Moulik Dayal, Data Scientist and AI Curriculum Engineer."
+openGraph:
+  title: "Moulik Dayal | Data Scientist & AI Curriculum Engineer"
+  type: website
+  description: "Portfolio and personal website of Moulik Dayal, Data Scientist and AI Curriculum Engineer."
+  url: "https://dayalmoulik.github.io/"

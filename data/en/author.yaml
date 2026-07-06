@@ -1,0 +1,15 @@
+name: "Moulik Dayal"
+nickname: "Moulik"
+greeting: "Hi, I am"
+image: "images/author/moulik.png"
+contactInfo:
+  email: "dayalmoulik5@gmail.com"
+  phone: "+91-9560813210"
+  github: "dayalmoulik"
+  linkedin: "moulik-dayal-a95751b7"
+
+summary:
+  - I am a Data Scientist & AI Curriculum Engineer
+  - I bridge the gap between complex AI research and real-world application
+  - I specialize in Deep Learning, NLP, and Multi-Agent RAG systems
+  - I design and deliver national-level AI curricula at CDAC Pune

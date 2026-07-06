@@ -1,0 +1,50 @@
+baseURL: https://dayalmoulik.github.io/
+locale: en
+title: "Moulik Dayal | Data Scientist & AI Curriculum Engineer"
+theme: toha
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+enableEmoji: true
+
+params:
+  gitRepo: https://github.com/dayalmoulik/dayalmoulik.github.io
+  gitBranch: main
+
+  topNavbar:
+    maxVisibleSections: 5
+
+  features:
+    theme:
+      enable: true
+      services:
+        light: true
+        dark: true
+        default: system
+    portfolio:
+      enable: true
+    blog:
+      enable: false
+    notes:
+      enable: false
+    comment:
+      enable: false
+    analytics:
+      enable: false
+
+  footer:
+    disclaimer:
+      enable: true

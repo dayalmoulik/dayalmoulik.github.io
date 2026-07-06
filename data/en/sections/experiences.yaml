@@ -1,0 +1,21 @@
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 2
+  showOnNavbar: true
+
+experiences:
+  - company:
+      name: "CDAC Pune"
+      url: "https://www.cdac.in"
+      location: "Pune, India"
+      overview: "CDAC (Centre for Development of Advanced Computing) is the premier R&D organization of the Ministry of Electronics and Information Technology (MeitY) for carrying out R&D in IT, Electronics and Associated Areas."
+    positions:
+      - designation: "Project Engineer"
+        start: "Nov 2022"
+        responsibilities:
+          - "Spearheaded the design and delivery of advanced Artificial Intelligence curricula under the national FutureSkills Prime project, educating college students and government officials."
+          - "Organized and facilitated webinars to generate AI awareness in academic institutions and for Pune Airport CISF personnel."
+          - "Led a comprehensive offline AI course at Nirmala College for Women, Coimbatore, to foster local tech talent."
+          - "Developed machine learning models and deep learning applications for various organizational data-driven initiatives."

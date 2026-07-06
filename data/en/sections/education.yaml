@@ -1,0 +1,34 @@
+section:
+  name: Education
+  id: education
+  template: sections/education.html
+  enable: true
+  weight: 4
+  showOnNavbar: true
+
+degrees:
+  - name: "M.Tech. in AI & ML"
+    icon: fa-graduation-cap
+    timeframe: "Expected 2026 (Current Last Semester)"
+    institution:
+      name: "BITS Pilani (WILP)"
+      url: "https://www.bits-pilani.ac.in"
+    summary: "Currently completing dissertation on TRISEVA: A Multi-Agent Retrieval-Augmented system for explainable cross-domain QA."
+
+  - name: "PG Diploma in Artificial Intelligence"
+    icon: fa-university
+    timeframe: "2022"
+    institution:
+      name: "CDAC Pune"
+      url: "https://www.cdac.in"
+    grade:
+      scale: "Grade"
+      achieved: "A (81.38%)"
+    summary: "Intensive training program focused on Deep Learning, NLP, Computer Vision, and AI system design."
+
+  - name: "B.Tech. in Computer Science Engineering"
+    icon: fa-school
+    timeframe: "2012 - 2016"
+    institution:
+      name: "Bharati Vidyapeeth College of Engineering, Delhi"
+      url: "http://www.bvcoend.ac.in"
