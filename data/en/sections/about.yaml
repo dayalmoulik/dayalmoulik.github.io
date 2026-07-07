@@ -28,15 +28,15 @@ badges:
   - type: certification
     name: "Natural Language Processing Specialization"
     url: "https://www.coursera.org/specializations/natural-language-processing"
-    badge: "images/badges/nlp.png"
+    badge: "/images/badges/nlp.png"
   - type: certification
     name: "Deep Learning Specialization"
     url: "https://www.coursera.org/specializations/deep-learning"
-    badge: "images/badges/dl.png"
+    badge: "/images/badges/dl.png"
   - type: certification
     name: "Data Science, Machine Learning & Deep Learning"
     url: ""
-    badge: "images/badges/ds.png"
+    badge: "/images/badges/ds.png"
   - type: soft-skill-indicator
     name: Machine Learning
     percentage: 95
